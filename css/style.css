@@ -1,0 +1,685 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html,body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.overflow{
+    min-height: 600px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4)0,rgba(0,0,0,0)60%,rgba(0,0,0,0.8)100%);
+    width: 100%;
+}
+
+.center{
+    width: 100%;
+    max-width: 1265px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    min-height: 600px;
+    background-size: cover;
+    background-position: top;
+    background-image: url('../imagens/internetBG.jpg');
+}
+
+header .menu-mobile{
+    cursor: pointer;
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url(../imagens/menu.png);
+    background-size: 100% 100%;
+    margin-right: 20px;
+}
+
+header .menu-mobile ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    
+    background-color: white;
+    text-align: center;
+}
+
+header .menu-mobile ul li{
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+}
+
+header .menu-mobile a{
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+nav.menu-mobile ul li:hover{
+    background-color: rgb(230, 227, 227);
+}
+
+header .menu{
+    float: right;
+    margin-top: 46px;
+}
+
+header .menu ul{
+    list-style-type: none;
+}
+
+header .menu li{
+    display: inline-block;
+}
+
+header .menu a{
+    color: rgba(233, 233, 233, 0.733);
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.chamada1{
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    background-color: #141b2bc6;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.chamada1 h2{
+    font-size: 43px;
+    font-weight: bold;
+}
+
+.chamada1 p{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 170%;
+}
+
+.roxinha{
+    background-color: #2c3068;
+    width: 100%;
+    height: calc(490px - 85px);
+    padding: 0px 2%;
+    color: white;
+}
+
+.roxinha .center{
+    height: 100%;
+}
+
+.roxinha .descricao{
+    width: 40%;
+    display: inline-block;
+    margin-left: 100px;
+    padding-top: 40px;
+}
+
+.roxinha h2,.roxinha p{
+    font-weight: 300;
+}
+
+.roxinha h2{
+    margin-bottom:17px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.roxinha p{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.roxinha ul{
+    list-style: inside;
+}
+
+.roxinha ul li{
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.device{
+    float: right;
+    width: 50%;
+    height: 490px;
+    background-image: url(../imagens/device1.png);
+    background-size: 100% 100%;
+    position: relative;
+    top: -85px;
+    left: -70px;
+}
+
+.botao{
+    background-color: #ff703d;
+    width: 165px;
+    height: 44px;
+    cursor: pointer;
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.sessao-detalhes .center{
+    text-align: center;
+    margin-top: 130px;
+    padding: 0 2%;
+    height: 500px;
+}
+
+.sessao-detalhes .center h2{
+    font-size: 38px;
+    font-weight: bold;
+    color: #4a2c68;
+}
+
+.sessao-detalhes .center h4{
+    margin-top: 30px;
+    font-weight: bold;
+    color: #4a2c68;
+}
+
+.sessao-detalhes .center p{
+    padding: 0 2%;
+    color: #4a2c68;
+    line-height: 27px;
+    margin-top: 5px;
+}
+
+.sessao-detalhes img{
+    width: 90%;
+    max-width: 900px;
+    position: relative;
+    top: 80px;
+}
+
+.sessao-detalhes .wraper-detalhes{
+    display: flex;
+}
+
+.sessao-detalhes .sobre{
+    order: 1;
+    display: inline-block;
+    width: 50%;
+    background-color: #6771aa;
+    padding: 180px 30px 90px 20px;
+    color: white;
+}
+
+.sessao-detalhes .sobre .wraper-sobre{
+    float: right;
+    max-width: 400px;
+}
+
+.sessao-detalhes .sobre .wraper-sobre h2{
+    font-size: 34px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 7px;
+}
+
+.sessao-detalhes .sobre .wraper-sobre p{
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.scrollEquipe{
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.scrollWraper{
+    width: 100%;
+}
+
+.sobre-autor{
+    float: left;
+}
+
+.sessao-detalhes .autor{
+    order: 2;
+    display: inline-block;
+    background-color: rgb(242, 250, 248);
+    color: black;
+    width: 50%;
+    padding: 180px 30px 90px 30px;
+}
+
+.sessao-detalhes .autor .wraper-autor{
+    max-width: 400px;
+    display: inline-block;
+}
+
+.sessao-detalhes .autor .wraper-autor h2{
+    text-align: left;
+    font-size: 34px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.sessao-detalhes .autor .wraper-autor p{
+    margin-left: 3px;
+    color: rgb(85, 85, 85);
+    font-size: 13px;
+    font-style: italic;
+}
+
+.sessao-detalhes .autor .img-autor{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 17px;
+    background-image: url(../imagens/EdnaldoPereira.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.texto-autor{
+    max-width: 400px;
+    margin: 10px 3px;
+}
+
+.texto-autor p{
+    font-weight: normal;
+    line-height: 30px;
+    color: black;
+}
+
+.slider-bilocas{
+    margin-top: 10px;
+    height: 30px;
+}
+
+.slider-bilocas span{
+    width: 16px;
+    height: 16px;
+    float: left;
+    border-radius: 8px;
+    margin-left: 0;
+    background-color: rgb(179, 193, 237);
+}
+
+.linha-tempo{
+    float: left;
+    margin-top: 6px;
+    height: 4px;
+    width: 10%;
+    max-width: 500px;
+    background-color: rgb(179, 193, 237);
+}
+
+.seta-bilocas{
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.seta-bilocas h2{
+    display: inline-block;
+    color: #2c3068;
+    margin: 0px 29%;
+    font-weight: bold;
+    font-size: 47px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.seta-bilocas h2::selection{
+    background: none;
+}
+
+.sessao-form{
+    background: rgba(44,48,104,1);
+    padding: 70px 0;
+}
+
+.sessao-form .formulario{
+    width: 50%;
+    float: left;
+    padding-left: 17px;
+}
+
+.formulario h2{
+    color: white;
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.formulario p{
+    color: white;
+    font-weight: 300;
+    max-width: 550px;
+    margin: 27px 0;
+    line-height: 30px;
+}
+
+.sessao-form .map{
+    width: 50%;
+    float: left;
+    padding-left: 97px;
+}
+
+.map p{
+    color: white;
+    font-weight: 300;
+    max-width: 550px;
+    margin: 27px auto;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.map h2{
+    color: white;
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.map img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.map .legendinha{
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    max-width: 550px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+footer{
+    padding: 60px 4%;
+    background-color: #192123;
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+footer p:nth-of-type(1){
+    float: left;
+}
+
+footer p:nth-of-type(2){
+    float: right;
+}
+
+.deepweb{
+    width: 100%;
+    height: 500px;
+    padding: 2%;
+    background: linear-gradient(0deg, rgba(25,33,35,1) 66%, rgba(44,48,104,1) 100%);
+}
+
+.deepweb .titlesinho{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    color: rgb(175, 175, 175);
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 43px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1080px){
+    .chamada1{
+        display: inline-block;
+        width: 100%;
+        max-width: none;
+        text-align: center;
+        padding: 0 2%;
+        margin: 120px auto;
+    }
+
+    .chamada1 h2{
+        font-size: 38px;
+    }
+
+    .chamada1 p,h2{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+
+    .device{
+        display: none;
+    }
+
+    .roxinha{
+        text-align: center;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .roxinha .descricao{
+        width: auto;
+        margin: 0;
+    }
+
+    .roxinha .descricao h2{
+        font-size: 35px;
+    }
+
+    .botao{
+        display: inline-block;
+    }
+
+    .roxinha ul li{
+        text-align: left;
+    }
+
+    .roxinha ul{
+        display: inline-block;
+    }
+
+    .sessao-form .center{
+        text-align: center;
+        padding: 0 2%;
+    }
+
+    .sessao-form .formulario{
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+
+    .sessao-form .formulario h2{
+        display: block;
+    }
+
+    .sessao-form .formulario p{
+        display: inline-block;
+    }
+
+    .sessao-form .map{
+        width: 100%;
+        float: none;
+        margin-top: 47px;
+        padding: 0;
+    }
+
+    .map h2{
+        display: block;
+        padding: 0;
+    }
+
+    .map .map-container{
+        width: 100%;
+        max-width: 600px;
+        padding-top: 50%;
+        margin-top: 20px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 720px){
+    header .menu{
+        display: none;
+    }
+
+    header .menu-mobile{
+        display: block;
+        float: right;
+        margin-top: 30px;
+    }
+
+    .chamada1 h2{
+        font-size: 30px;
+        margin-bottom: 7px;
+    }
+
+    .sessao-detalhes .center p{
+        font-size: 15px
+    }
+
+    .sessao-detalhes .center h2{
+        font-size: 37px
+    }
+
+    .sessao-detalhes .wraper-detalhes{
+        display: block;
+    }
+
+    .sessao-detalhes .sobre{
+        width: 100%;
+        display: block;
+        padding: 100px 60px;
+    }
+
+    .sessao-detalhes .autor{
+        width: 100%;
+        display: block;
+        padding: 100px 60px
+    }
+
+    .sessao-detalhes .autor .wraper-autor h2{
+        font-size: 30px;
+    }
+
+    .sessao-detalhes .autor .img-autor{
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-top: 5px;
+        background-image: url(../imagens/EdnaldoPereira.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        position: relative;
+        top: -4px;
+    }
+
+    .sessao-detalhes img{
+        width: 100%;
+        top: 40px;
+    }
+
+}
+
+@media screen and (max-width: 470px){
+    
+    .ball{
+        width: 128px;
+        height: 128px;
+        margin: 18px 28px;
+        position: relative;
+        display: inline-block;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #ball1{
+        background-image: url(../imagens/cameras.jpg);
+    }
+
+    #ball2{
+        background-image: url(../imagens/compras.jpg);
+    }
+
+    #ball3{
+        background-image: url(../imagens/tt.jpg);
+    }
+
+    .chamada1{
+        max-width: 350px;
+    }
+
+    .sessao-detalhes .autor{
+        padding: 100px 10px;
+    }
+
+    .sessao-detalhes .autor .img-autor{
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+    .sessao-detalhes .sobre{
+        padding: 100px 10px;
+    }
+
+    .sessao-detalhes img{
+        height: 40%;
+        top: 7px;
+    }
+
+    .sessao-detalhes .center h2{
+        margin-bottom: 20px;
+    }
+
+    .sessao-detalhes .center p{
+        font-size: 13px;
+    }
+
+    .sessao-detalhes .center{
+        margin-top: 57px;
+    }
+
+    footer{
+        text-align: center;
+    }
+    
+    footer p:nth-of-type(1){
+        float: none;
+    }
+    
+    footer p:nth-of-type(2){
+        margin-top: 17px;
+        float: none;
+    }
+}
